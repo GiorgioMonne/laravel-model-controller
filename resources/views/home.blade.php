@@ -10,14 +10,22 @@
 
     <main class="main">
 
-        
-        @foreach ($movies as $movie)
+        <div class="container">
+
+            @foreach ($movies as $movie)
     
             <div class="card">
-                <li>{{$movie['title']}}</li>
+                <h3>Nome film: {{$movie['title']}}</h3>
+                <h3>Nome Originale: {{$movie['original_title']}}</h3>
+                <h3>Nazionalitè: {{$movie['nationality']}}</h3>
+                <h3>Data uscita: {{$movie['date']}}</h3>
+                <h3>Voto giuria: {{$movie['vote']}}</h3>
+
             </div>
                 
-        @endforeach
+            @endforeach
+
+        </div>
 
     </main>
     

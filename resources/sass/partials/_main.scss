@@ -1,5 +1,24 @@
 .main{
     background-color: lightgreen;
+    font-family: 'Roboto', sans-serif;
 
-    
+    .container{
+        width: 1200px;
+        margin:100px auto;
+        display: flex;
+        flex-wrap: wrap;
+
+        .card{
+            width: calc(100% / 5 );
+            background-color: bisque;
+            border: 1px solid black;
+
+            h3{
+                padding:10px 0;
+                text-align: center
+            }
+        }
+    }
 }
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&family=Source+Sans+Pro:wght@700&display=swap');
